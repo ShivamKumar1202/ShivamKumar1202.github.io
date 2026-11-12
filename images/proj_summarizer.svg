@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Illustration: video transcript chunks mapped into a vector index, with nearest neighbours retrieved as a summary">
+  <defs>
+    <linearGradient id="smBG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1014"/>
+      <stop offset=".55" stop-color="#0f1a20"/>
+      <stop offset="1" stop-color="#0a1418"/>
+    </linearGradient>
+    <linearGradient id="smAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff8a3d"/>
+      <stop offset="1" stop-color="#ffc464"/>
+    </linearGradient>
+    <linearGradient id="smNode" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd08a"/>
+      <stop offset="1" stop-color="#ff9a46"/>
+    </linearGradient>
+    <radialGradient id="smGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffb03a" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#ffb03a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="smGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#smBG)"/>
+  <rect width="1200" height="750" fill="url(#smGrid)"/>
+  <ellipse cx="880" cy="360" rx="430" ry="330" fill="url(#smGlow)"/>
+
+  <!-- left: video source -->
+  <g transform="translate(78 150)">
+    <rect width="330" height="196" rx="14" fill="#111a20" stroke="#ffffff" stroke-opacity=".14"/>
+    <rect x="0" y="0" width="330" height="196" rx="14" fill="#0b1216"/>
+    <rect x="18" y="18" width="294" height="126" rx="8" fill="#0f1b22" stroke="#ffffff" stroke-opacity=".07"/>
+    <!-- play triangle -->
+    <circle cx="165" cy="81" r="30" fill="#ffb03a" fill-opacity=".14" stroke="#ffb03a" stroke-opacity=".5"/>
+    <path d="M156 68l26 13-26 13z" fill="#ffc464"/>
+    <!-- timeline -->
+    <rect x="18" y="158" width="294" height="4" rx="2" fill="#ffffff" fill-opacity=".10"/>
+    <rect x="18" y="158" width="132" height="4" rx="2" fill="url(#smAccent)"/>
+    <circle cx="150" cy="160" r="5.5" fill="#ffc464"/>
+    <text x="18" y="186" font-family="'JetBrains Mono',monospace" font-size="11.5" letter-spacing="2.4" fill="#8fa3ad">YOUTUBE SOURCE</text>
+  </g>
+
+  <!-- connector: transcript chunks -->
+  <g stroke="#ffb03a" stroke-opacity=".55" stroke-width="1.6" fill="none">
+    <path d="M408 250 L486 250"/>
+    <path d="M408 300 L486 300" stroke-opacity=".28"/>
+    <path d="M408 350 L486 350" stroke-opacity=".18"/>
+  </g>
+
+  <!-- middle: chunks becoming embeddings -->
+  <g transform="translate(486 214)">
+    <text x="0" y="-14" font-family="'JetBrains Mono',monospace" font-size="11.5" letter-spacing="2.4" fill="#8fa3ad">TRANSCRIPT CHUNKS</text>
+    <g font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#c9d6dd">
+      <rect width="120" height="26" rx="6" fill="#131f26" stroke="#ffffff" stroke-opacity=".12"/><rect x="10" y="9" width="72" height="7" rx="3.5" fill="#4d6570"/>
+      <g transform="translate(0 36)">
+        <rect width="120" height="26" rx="6" fill="#18262e" stroke="#ffb03a" stroke-opacity=".55"/><rect x="10" y="9" width="88" height="7" rx="3.5" fill="#ffb03a" fill-opacity=".75"/>
+      </g>
+      <g transform="translate(0 72)">
+        <rect width="120" height="26" rx="6" fill="#131f26" stroke="#ffffff" stroke-opacity=".12"/><rect x="10" y="9" width="60" height="7" rx="3.5" fill="#4d6570"/>
+      </g>
+      <g transform="translate(0 108)">
+        <rect width="120" height="26" rx="6" fill="#131f26" stroke="#ffffff" stroke-opacity=".12"/><rect x="10" y="9" width="78" height="7" rx="3.5" fill="#37474f"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- arrow into vector space -->
+  <path d="M636 300 L706 300" stroke="#ffb03a" stroke-opacity=".6" stroke-width="1.6" marker-end=""/>
+  <path d="M700 294l10 6-10 6" fill="none" stroke="#ffb03a" stroke-opacity=".7" stroke-width="1.6"/>
+
+  <!-- right: vector space with nearest neighbours -->
+  <g transform="translate(718 120)">
+    <rect width="410" height="380" rx="16" fill="#0b1216" stroke="#ffffff" stroke-opacity=".12"/>
+    <rect width="410" height="380" rx="16" fill="url(#smGrid)"/>
+    <text x="20" y="30" font-family="'JetBrains Mono',monospace" font-size="11.5" letter-spacing="2.4" fill="#8fa3ad">FAISS · VECTOR INDEX</text>
+
+    <!-- dim scatter -->
+    <g fill="#5a7683">
+      <circle cx="70" cy="120" r="4"/><circle cx="122" cy="212" r="3.5"/>
+      <circle cx="186" cy="96" r="3"/><circle cx="240" cy="188" r="4"/>
+      <circle cx="318" cy="128" r="3.5"/><circle cx="356" cy="238" r="3"/>
+      <circle cx="96" cy="292" r="3.5"/><circle cx="204" cy="304" r="3"/>
+      <circle cx="300" cy="322" r="3.5"/><circle cx="146" cy="168" r="2.5"/>
+      <circle cx="272" cy="252" r="2.5"/><circle cx="340" cy="176" r="2.5"/>
+    </g>
+
+    <!-- nearest-neighbour links -->
+    <g stroke="url(#smAccent)" stroke-width="1.7" fill="none" stroke-opacity=".85">
+      <path d="M196 190 L262 236"/>
+      <path d="M262 236 L330 196"/>
+      <path d="M196 190 L164 260"/>
+      <path d="M262 236 L232 300"/>
+    </g>
+
+    <!-- highlighted nodes -->
+    <g>
+      <circle cx="196" cy="190" r="13" fill="url(#smNode)" opacity=".22"/>
+      <circle cx="196" cy="190" r="6.5" fill="#ffc464"/>
+      <circle cx="262" cy="236" r="18" fill="#ffb03a" opacity=".16"/>
+      <circle cx="262" cy="236" r="8.5" fill="#ffb03a"/>
+      <circle cx="330" cy="196" r="6.5" fill="#ffc464"/>
+      <circle cx="164" cy="260" r="6" fill="#ff9a46"/>
+      <circle cx="232" cy="300" r="6" fill="#ff9a46"/>
+    </g>
+
+    <!-- query ring -->
+    <circle cx="262" cy="236" r="46" fill="none" stroke="#ffb03a" stroke-opacity=".3" stroke-dasharray="3 5"/>
+  </g>
+
+  <!-- summary card -->
+  <g transform="translate(718 536)">
+    <rect width="410" height="118" rx="14" fill="#121a1f" stroke="#ffb03a" stroke-opacity=".35"/>
+    <text x="20" y="30" font-family="'JetBrains Mono',monospace" font-size="11.5" letter-spacing="2.4" fill="#ffb03a">GENERATED SUMMARY</text>
+    <g fill="#8fa3ad">
+      <rect x="20" y="46" width="340" height="7" rx="3.5"/>
+      <rect x="20" y="64" width="368" height="7" rx="3.5" fill-opacity=".8"/>
+      <rect x="20" y="82" width="248" height="7" rx="3.5" fill-opacity=".6"/>
+    </g>
+  </g>
+
+  <!-- corner ticks -->
+  <g stroke="#ffb03a" stroke-opacity=".35" stroke-width="2">
+    <path d="M52 52h22M52 52v22"/>
+    <path d="M1148 698h-22M1148 698v-22"/>
+  </g>
+</svg>

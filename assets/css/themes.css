@@ -1,0 +1,432 @@
+/* =========================================================
+   THEMES — every visual value lives here.
+
+   base.css never contains a colour or a font family, so a
+   theme is a swap of these tokens only.
+
+   Themes: editorial (default) · paper · kinetic
+   Modes : dark · light   (data-theme-mode on <html>)
+
+   The visitor toggle flips dark ↔ light. With ?dev=1 the
+   full theme list is exposed.
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   Shared, theme-independent tokens
+   --------------------------------------------------------- */
+:root {
+  --font-body: "Sora", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  --text-base: 16px;
+  --text-h1: clamp(46px, 8.2vw, 100px);
+  --text-h2: clamp(33px, 5vw, 58px);
+  --weight-body: 300;
+  --weight-display: 300;
+  --leading-tight: 1.07;
+
+  --shell: 1180px;
+  --pad: clamp(20px, 5vw, 48px);
+  --nav-h: 72px;
+
+  --section-pad: clamp(84px, 11vw, 140px);
+  --section-pad-sm: clamp(46px, 6vw, 70px);
+  --head-gap: clamp(40px, 5.5vw, 66px);
+  --gap: 16px;
+  --gap-lg: clamp(20px, 3vw, 30px);
+  --gap-xl: clamp(28px, 4.5vw, 56px);
+
+  --measure-head: 760px;
+  --measure-body: 62ch;
+  --measure-lede: 46ch;
+
+  --radius: 18px;
+  --radius-xs: 10px;
+  --btn-pad: 15px 26px;
+  --btn-radius: 100px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* =========================================================
+   EDITORIAL — default. Warm ink & amber, magazine feel.
+   ========================================================= */
+:root,
+[data-theme="editorial"] {
+  --bg: #08090a;
+  --bg-tint: #0d0e10;
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-faint: rgba(255, 255, 255, 0.025);
+  --surface-raised: #131519;
+  --surface-raised-2: #191c21;
+
+  --ink: #f4f1ea;
+  --ink-dim: #cfcbc2;
+  --muted: #9d9a93;
+
+  --accent: #ffb03a;
+  --accent-hover: #ffc15f;
+  --accent-ink: #120f08;
+  --accent-soft: rgba(255, 176, 58, 0.13);
+  --accent-2: #ff8a3d;
+  --line-accent: rgba(255, 176, 58, 0.36);
+
+  --line: rgba(255, 255, 255, 0.10);
+  --line-strong: rgba(255, 255, 255, 0.18);
+
+  --live: #63d471;
+  --live-soft: rgba(99, 212, 113, 0.16);
+
+  --selection-bg: #ffb03a;
+  --selection-ink: #101010;
+
+  --nav-bg: rgba(8, 9, 10, 0.78);
+  --nav-blur: blur(16px) saturate(140%);
+  --scrim: rgba(4, 5, 6, 0.62);
+
+  --hero-glow:
+    radial-gradient(closest-side, rgba(255, 176, 58, 0.17), transparent 72%),
+    radial-gradient(closest-side, rgba(255, 138, 61, 0.10), transparent 70%);
+  --hero-glow-blur: 20px;
+  --spotlight: rgba(255, 176, 58, 0.09);
+
+  --ring: rgba(255, 176, 58, 0.34);
+  --ring-faint: rgba(255, 255, 255, 0.09);
+  --ring-strong: rgba(255, 176, 58, 0.5);
+  --portrait-shadow: 0 40px 60px rgba(0, 0, 0, 0.65);
+
+  --meter-track: rgba(255, 255, 255, 0.07);
+  --meter-fill: linear-gradient(90deg, var(--accent-2), var(--accent));
+
+  --media-bg: #0a0b0c;
+  --media-filter: saturate(0.92);
+  --media-scrim: linear-gradient(180deg, transparent 45%, rgba(8, 9, 10, 0.78));
+  --media-label: rgba(255, 255, 255, 0.72);
+  --media-chip: rgba(10, 11, 12, 0.7);
+
+  --cta-bg:
+    linear-gradient(180deg, rgba(8, 9, 10, 0.86), rgba(8, 9, 10, 0.94)),
+    url("../../images/opt/cta-bg.webp") center 40% / cover no-repeat;
+  --cta-glow: radial-gradient(600px 300px at 50% 40%, rgba(255, 176, 58, 0.14), transparent 70%);
+
+  --shadow-accent: 0 14px 30px -12px rgba(255, 176, 58, 0.55);
+  --shadow-lg: 0 30px 60px -30px rgba(0, 0, 0, 0.9);
+}
+
+/* ---------------- editorial / light ---------------- */
+[data-theme="editorial"][data-theme-mode="light"] {
+  --bg: #faf8f4;
+  --bg-tint: #f2eee6;
+  --surface: rgba(20, 16, 10, 0.06);
+  --surface-faint: rgba(20, 16, 10, 0.03);
+  --surface-raised: #ffffff;
+  --surface-raised-2: #f7f3ec;
+
+  --ink: #17140f;
+  --ink-dim: #3f3a32;
+  --muted: #726b5f;
+
+  --accent: #a85a12;
+  --accent-hover: #8f4c0d;
+  --accent-ink: #fffaf2;
+  --accent-soft: rgba(168, 90, 18, 0.10);
+  --accent-2: #c9762a;
+  --line-accent: rgba(168, 90, 18, 0.32);
+
+  --line: rgba(23, 20, 15, 0.12);
+  --line-strong: rgba(23, 20, 15, 0.22);
+
+  --live: #2f8f45;
+  --live-soft: rgba(47, 143, 69, 0.14);
+
+  --selection-bg: #17140f;
+  --selection-ink: #faf8f4;
+
+  --nav-bg: rgba(250, 248, 244, 0.82);
+  --scrim: rgba(250, 248, 244, 0.6);
+
+  --hero-glow:
+    radial-gradient(closest-side, rgba(201, 118, 42, 0.14), transparent 72%),
+    radial-gradient(closest-side, rgba(168, 90, 18, 0.07), transparent 70%);
+  --spotlight: rgba(168, 90, 18, 0.07);
+
+  --ring: rgba(168, 90, 18, 0.28);
+  --ring-faint: rgba(23, 20, 15, 0.10);
+  --ring-strong: rgba(168, 90, 18, 0.42);
+  --portrait-shadow: 0 32px 48px rgba(60, 45, 25, 0.22);
+
+  --meter-track: rgba(23, 20, 15, 0.09);
+
+  --media-bg: #e9e3d8;
+  --media-filter: saturate(0.96);
+  --media-scrim: linear-gradient(180deg, transparent 55%, rgba(250, 248, 244, 0.55));
+  --media-label: rgba(255, 255, 255, 0.9);
+  --media-chip: rgba(255, 255, 255, 0.78);
+
+  --cta-bg:
+    linear-gradient(180deg, rgba(250, 248, 244, 0.92), rgba(250, 248, 244, 0.97)),
+    url("../../images/opt/cta-bg.webp") center 40% / cover no-repeat;
+  --cta-glow: radial-gradient(600px 300px at 50% 40%, rgba(201, 118, 42, 0.12), transparent 70%);
+
+  --shadow-accent: 0 14px 28px -14px rgba(168, 90, 18, 0.5);
+  --shadow-lg: 0 24px 50px -28px rgba(60, 45, 25, 0.35);
+}
+
+/* =========================================================
+   PAPER — academic press. Serif-led, rust accent.
+   ========================================================= */
+[data-theme="paper"] {
+  --bg: #f7f4ee;
+  --bg-tint: #efe9df;
+  --surface: rgba(30, 26, 20, 0.05);
+  --surface-faint: rgba(30, 26, 20, 0.025);
+  --surface-raised: #fffdf9;
+  --surface-raised-2: #f4efe6;
+
+  --ink: #14120e;
+  --ink-dim: #3a352d;
+  --muted: #6d6558;
+
+  --accent: #9a3d1b;
+  --accent-hover: #833113;
+  --accent-ink: #fff8f2;
+  --accent-soft: rgba(154, 61, 27, 0.09);
+  --accent-2: #b8562b;
+  --line-accent: rgba(154, 61, 27, 0.28);
+
+  --line: rgba(20, 18, 14, 0.13);
+  --line-strong: rgba(20, 18, 14, 0.24);
+
+  --live: #2f7f43;
+  --live-soft: rgba(47, 127, 67, 0.13);
+
+  --selection-bg: #9a3d1b;
+  --selection-ink: #fff8f2;
+
+  --nav-bg: rgba(247, 244, 238, 0.85);
+  --scrim: rgba(247, 244, 238, 0.6);
+
+  --hero-glow:
+    radial-gradient(closest-side, rgba(184, 86, 43, 0.11), transparent 72%),
+    radial-gradient(closest-side, rgba(154, 61, 27, 0.06), transparent 70%);
+  --spotlight: rgba(154, 61, 27, 0.06);
+
+  --ring: rgba(154, 61, 27, 0.26);
+  --ring-faint: rgba(20, 18, 14, 0.10);
+  --ring-strong: rgba(154, 61, 27, 0.4);
+  --portrait-shadow: 0 30px 44px rgba(60, 48, 32, 0.2);
+
+  --meter-track: rgba(20, 18, 14, 0.09);
+  --meter-fill: linear-gradient(90deg, var(--accent-2), var(--accent));
+
+  --media-bg: #e7e0d3;
+  --media-filter: saturate(0.9) contrast(1.02);
+  --media-scrim: linear-gradient(180deg, transparent 55%, rgba(247, 244, 238, 0.55));
+  --media-label: rgba(255, 255, 255, 0.9);
+  --media-chip: rgba(255, 255, 255, 0.8);
+
+  --cta-bg:
+    linear-gradient(180deg, rgba(247, 244, 238, 0.93), rgba(247, 244, 238, 0.97)),
+    url("../../images/opt/cta-bg.webp") center 40% / cover no-repeat;
+  --cta-glow: radial-gradient(600px 300px at 50% 40%, rgba(184, 86, 43, 0.11), transparent 70%);
+
+  --shadow-accent: 0 14px 28px -14px rgba(154, 61, 27, 0.45);
+  --shadow-lg: 0 24px 50px -28px rgba(60, 48, 32, 0.3);
+
+  /* paper leans on the serif for body copy too */
+  --font-body: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --weight-body: 400;
+  --text-base: 17px;
+}
+
+/* ---------------- paper / dark ---------------- */
+[data-theme="paper"][data-theme-mode="dark"] {
+  --bg: #14120f;
+  --bg-tint: #1a1713;
+  --surface: rgba(255, 245, 230, 0.07);
+  --surface-faint: rgba(255, 245, 230, 0.03);
+  --surface-raised: #1e1a16;
+  --surface-raised-2: #252019;
+
+  --ink: #f3ede2;
+  --ink-dim: #cfc5b6;
+  --muted: #9c9081;
+
+  --accent: #e0a06a;
+  --accent-hover: #eeb487;
+  --accent-ink: #1a1611;
+  --accent-soft: rgba(224, 160, 106, 0.13);
+  --accent-2: #cf8352;
+  --line-accent: rgba(224, 160, 106, 0.34);
+
+  --line: rgba(255, 245, 230, 0.11);
+  --line-strong: rgba(255, 245, 230, 0.2);
+
+  --live: #7ec98c;
+  --live-soft: rgba(126, 201, 140, 0.15);
+
+  --selection-bg: #e0a06a;
+  --selection-ink: #14120f;
+
+  --nav-bg: rgba(20, 18, 15, 0.8);
+  --scrim: rgba(10, 9, 7, 0.62);
+
+  --hero-glow:
+    radial-gradient(closest-side, rgba(224, 160, 106, 0.14), transparent 72%),
+    radial-gradient(closest-side, rgba(207, 131, 82, 0.08), transparent 70%);
+  --spotlight: rgba(224, 160, 106, 0.08);
+
+  --ring: rgba(224, 160, 106, 0.32);
+  --ring-faint: rgba(255, 245, 230, 0.1);
+  --ring-strong: rgba(224, 160, 106, 0.46);
+  --portrait-shadow: 0 40px 60px rgba(0, 0, 0, 0.6);
+
+  --meter-track: rgba(255, 245, 230, 0.08);
+  --meter-fill: linear-gradient(90deg, var(--accent-2), var(--accent));
+
+  --media-bg: #0e0d0b;
+  --media-filter: saturate(0.9);
+  --media-scrim: linear-gradient(180deg, transparent 45%, rgba(20, 18, 15, 0.78));
+  --media-label: rgba(255, 255, 255, 0.75);
+  --media-chip: rgba(20, 18, 15, 0.72);
+
+  --cta-bg:
+    linear-gradient(180deg, rgba(20, 18, 15, 0.88), rgba(20, 18, 15, 0.95)),
+    url("../../images/opt/cta-bg.webp") center 40% / cover no-repeat;
+  --cta-glow: radial-gradient(600px 300px at 50% 40%, rgba(224, 160, 106, 0.12), transparent 70%);
+
+  --shadow-accent: 0 14px 30px -12px rgba(224, 160, 106, 0.4);
+  --shadow-lg: 0 30px 60px -30px rgba(0, 0, 0, 0.85);
+}
+
+/* =========================================================
+   KINETIC — technical, monospace-led, cool accent. Dev-only.
+   ========================================================= */
+[data-theme="kinetic"] {
+  --bg: #06090a;
+  --bg-tint: #0a1012;
+  --surface: rgba(140, 255, 200, 0.06);
+  --surface-faint: rgba(140, 255, 200, 0.025);
+  --surface-raised: #0d1517;
+  --surface-raised-2: #111c1f;
+
+  --ink: #e8fff6;
+  --ink-dim: #b7d6cb;
+  --muted: #7f9c93;
+
+  --accent: #8ff5c0;
+  --accent-hover: #a9ffd1;
+  --accent-ink: #03110b;
+  --accent-soft: rgba(143, 245, 192, 0.11);
+  --accent-2: #5fd6ff;
+  --line-accent: rgba(143, 245, 192, 0.34);
+
+  --line: rgba(143, 245, 192, 0.13);
+  --line-strong: rgba(143, 245, 192, 0.24);
+
+  --live: #8ff5c0;
+  --live-soft: rgba(143, 245, 192, 0.16);
+
+  --selection-bg: #8ff5c0;
+  --selection-ink: #03110b;
+
+  --nav-bg: rgba(6, 9, 10, 0.8);
+  --scrim: rgba(2, 4, 5, 0.65);
+
+  --hero-glow:
+    radial-gradient(closest-side, rgba(143, 245, 192, 0.13), transparent 72%),
+    radial-gradient(closest-side, rgba(95, 214, 255, 0.10), transparent 70%);
+  --spotlight: rgba(143, 245, 192, 0.07);
+
+  --ring: rgba(143, 245, 192, 0.3);
+  --ring-faint: rgba(143, 245, 192, 0.1);
+  --ring-strong: rgba(143, 245, 192, 0.44);
+  --portrait-shadow: 0 40px 60px rgba(0, 0, 0, 0.7);
+
+  --meter-track: rgba(143, 245, 192, 0.09);
+  --meter-fill: linear-gradient(90deg, var(--accent-2), var(--accent));
+
+  --media-bg: #04080a;
+  --media-filter: saturate(0.85) contrast(1.05);
+  --media-scrim: linear-gradient(180deg, transparent 45%, rgba(6, 9, 10, 0.8));
+  --media-label: rgba(232, 255, 246, 0.75);
+  --media-chip: rgba(6, 9, 10, 0.72);
+
+  --cta-bg:
+    linear-gradient(180deg, rgba(6, 9, 10, 0.9), rgba(6, 9, 10, 0.96)),
+    url("../../images/opt/cta-bg.webp") center 40% / cover no-repeat;
+  --cta-glow: radial-gradient(600px 300px at 50% 40%, rgba(143, 245, 192, 0.11), transparent 70%);
+
+  --shadow-accent: 0 14px 30px -12px rgba(143, 245, 192, 0.4);
+  --shadow-lg: 0 30px 60px -30px rgba(0, 0, 0, 0.9);
+
+  /* kinetic sets everything in mono */
+  --font-body: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --font-display: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --weight-display: 500;
+  --text-base: 15px;
+}
+
+/* =========================================================
+   THEME-SPECIFIC TEXTURE
+   Decoration only — no layout impact.
+   ========================================================= */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: var(--texture-opacity, 0);
+  background-image: var(--texture, none);
+  background-size: var(--texture-size, auto);
+}
+[data-theme="editorial"] { --texture-opacity: 0.035; --texture-size: 140px; --texture:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E"); }
+[data-theme="kinetic"] { --texture-opacity: 0.5; --texture-size: 40px; --texture:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M40 0H0V40' fill='none' stroke='%238ff5c0' stroke-opacity='.07' stroke-width='1'/%3E%3C/svg%3E"); }
+
+/* Kinetic squares off the rounded UI */
+[data-theme="kinetic"] {
+  --radius: 4px;
+  --radius-xs: 3px;
+  --btn-radius: 3px;
+}
+
+/* =========================================================
+   DEV THEME PICKER (only rendered with ?dev=1)
+   ========================================================= */
+.dev-themes {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--btn-radius);
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-lg);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+}
+.dev-themes__label {
+  padding-inline: 6px;
+  color: var(--muted);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.dev-themes button {
+  padding: 6px 10px;
+  border-radius: var(--radius-xs);
+  color: var(--muted);
+  border: 1px solid transparent;
+}
+.dev-themes button:hover { color: var(--ink); }
+.dev-themes button[aria-pressed="true"] {
+  color: var(--accent-ink);
+  background: var(--accent);
+}

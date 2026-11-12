@@ -1,710 +1,392 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Shivam Kr Chaudhary Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<html lang="en" data-theme="editorial" data-theme-mode="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <title>Shivam Kr Chaudhary — Software Engineer</title>
+  <meta name="description" content="Portfolio of Shivam Kr Chaudhary — software engineer and M.Tech CSE student at NSUT. Automation, machine learning, graph-based retrieval and immersive systems.">
+  <meta name="author" content="Shivam Kr Chaudhary">
+  <meta name="theme-color" content="#08090a">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Shivam Kr Chaudhary — Software Engineer">
+  <meta property="og:description" content="Software engineer and M.Tech CSE student at NSUT. Automation, machine learning, graph-based retrieval and immersive systems.">
+  <meta property="og:url" content="https://shivamkumar1202.github.io/">
+  <meta property="og:image" content="https://shivamkumar1202.github.io/images/opt/portrait.webp">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="canonical" href="https://shivamkumar1202.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2308090a'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='56' text-anchor='middle' fill='%23ffb03a'%3ESC%3C/text%3E%3C/svg%3E">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Sora:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
 
-<style>
+  <!-- Set the theme before first paint so there is no flash. -->
+  <script>
+    (function () {
+      var d = document.documentElement, t, m;
+      try { t = localStorage.getItem("site:theme"); m = localStorage.getItem("site:mode"); } catch (e) {}
+      if (["editorial", "paper", "kinetic"].indexOf(t) === -1) t = "editorial";
+      if (m !== "dark" && m !== "light") {
+        m = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      d.setAttribute("data-theme", t);
+      d.setAttribute("data-theme-mode", m);
+      d.style.colorScheme = m;
+    })();
+  </script>
 
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  /* background-color: #00ffd5; */
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shivam Kr Chaudhary",
+    "jobTitle": "Software Engineer",
+    "url": "https://shivamkumar1202.github.io/",
+    "image": "https://shivamkumar1202.github.io/images/opt/portrait.webp",
+    "email": "mailto:sk12022001@gmail.com",
+    "telephone": "+91-84364-27198",
+    "address": { "@type": "PostalAddress", "addressLocality": "Patna", "addressRegion": "Bihar", "addressCountry": "IN" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Netaji Subhas University of Technology" },
+      { "@type": "CollegeOrUniversity", "name": "Dr. B.C. Roy Engineering College" }
+    ],
+    "worksFor": { "@type": "Organization", "name": "Century Plyboards (I) Ltd." },
+    "sameAs": [
+      "https://github.com/shivamkumar1202",
+      "https://www.linkedin.com/in/Shivam1202/",
+      "https://www.instagram.com/Shivam.1202/"
+    ]
   }
-  to {
-    width: 100%;
-  }
-}
+  </script>
+</head>
 
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- Icon sprite -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".9" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2.2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+    <symbol id="i-mail-open" viewBox="0 0 24 24"><path d="M21.2 8.4a2 2 0 0 0-1.8-1.1H4.6a2 2 0 0 0-1.8 1.1L12 13z"/><path d="M2.8 9.6V19a2 2 0 0 0 2 2h14.4a2 2 0 0 0 2-2V9.6L12 15z"/></symbol>
+  </svg>
 
-/* project image zoom effect */
+  <div class="progress-line" aria-hidden="true"><span id="progress-fill"></span></div>
 
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
+  <!-- ============================= NAV ============================= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand__mark" data-brand-mark>SC</span>
+        <span class="brand__text" data-brand-name>Shivam Kr Chaudhary</span>
+      </a>
 
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about"><span class="nav__num">01</span>About</a>
+        <a href="#resume"><span class="nav__num">02</span>Resume</a>
+        <a href="#projects"><span class="nav__num">03</span>Projects</a>
+        <a href="#publications"><span class="nav__num">04</span>Research</a>
+        <a href="#contact"><span class="nav__num">05</span>Contact</a>
+      </nav>
 
+      <div class="nav__actions">
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour mode" hidden>
+          <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+        <a class="btn btn--solid btn--sm" data-resume-link href="data/Shivam-Resume.pdf" download>
+          CV <svg class="icon"><use href="#i-arrow"/></svg>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button"
+                aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
 
-</style>
+    <div class="nav__scrim" id="nav-scrim" hidden></div>
 
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile" hidden>
+      <a href="#about"><span class="nav__num">01</span>About</a>
+      <a href="#resume"><span class="nav__num">02</span>Resume</a>
+      <a href="#projects"><span class="nav__num">03</span>Projects</a>
+      <a href="#publications"><span class="nav__num">04</span>Research</a>
+      <a href="#contact"><span class="nav__num">05</span>Contact</a>
+      <a class="mobile-menu__cv" data-resume-link href="data/Shivam-Resume.pdf" download>
+        <span data-resume-label>Download CV</span> <svg class="icon"><use href="#i-arrow"/></svg>
+      </a>
+    </nav>
+  </header>
 
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Shivam Kr Chaudhary</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+  <main id="main">
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-			  <li class="nav-item"><a href="https://drive.google.com/file/d/1cRwKu48YdzCyOonGrdP6ZNuIOXl0JEWV/view?usp=sharing" target="_blank" class="btn btn-primary py-3 px-4">View CV</a> </li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Shivam Kr Chaudhary</span></h1>
+    <!-- ============================= HERO ============================= -->
+    <section class="hero" id="home">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__spotlight" id="spotlight" aria-hidden="true"></div>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+      <div class="shell">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="hero__eyebrow reveal">Hello!</p>
 
-						<script>
+            <h1 class="hero__intro reveal" data-delay="1">
+              I&rsquo;m
+              <span class="hero__name">Shivam Kr<br>Chaudhary</span>
+            </h1>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+            <p class="hero__role reveal" data-delay="2">
+              <span class="hero__role-prefix">an&nbsp;</span><span id="typed-role">Engineer</span><span class="caret" aria-hidden="true"></span>
+            </p>
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Engineer    ',
-						'Developer   ',
-						'Teacher     ',
-						'Entrepreneur',
-						];
+            <p class="hero__lede reveal" data-delay="3" data-hero-lede></p>
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 50); // Increase the delay to slow down the typing animation
-						}
+            <p class="hero__status reveal" data-delay="4" data-hero-status></p>
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+            <div class="hero__actions reveal" data-delay="5">
+              <a class="btn btn--solid" href="https://www.linkedin.com/in/Shivam1202/" target="_blank" rel="noopener noreferrer">
+                LinkedIn <svg class="icon"><use href="#i-arrow"/></svg>
+              </a>
+              <a class="btn btn--ghost" href="https://github.com/shivamkumar1202" target="_blank" rel="noopener noreferrer">
+                GitHub <svg class="icon"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </div>
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <!--<h2>A Problem Solver</h2> -->
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/Shivam1202/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://github.com/shivamkumar1202/" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="about-container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/b1.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Shivam Kr Chaudhary</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Software Developer</span></p>
-										<!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
-										<p><span class="title-s">Address: </span> <span>Patna, Bihar, India</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<br />
-									<p class="title-s">Skills</p>
-									<span>C/C++</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Python - JavaScript - Java</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Software Engineering</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Computer Networks</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Structures and Algorithms</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p align="justify">
-									Currently working as a Python Developer at Century Plyboards Ltd., I deveop robust and scalable systems that automate business processes and manual report generation tasks.
-									I also developed automated systems that streamlined business communication processes across different stakeholders on a Pan-India scale.
-									Along with an academic career that too has no shortage of stellar achievements, I have always been driven by a desire to explore the more tangible aspects of programming.
-									This desire brought me to the doors of the world of software development. 
-									I have accrued a wealth of experience working in several multi-disciplinary teams and have assumed a variety of roles in them. 
-									Whether as an intern, a developer, a team lead, or a teacher, I always do my best to enrich the work environment with my technical expertise and enthusiasm.
-
-								</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Python Developer - RPA</span></li>
-									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span> Automation, GitHub, Git, Arduino, Web Development, Unity Engine, Unreal Engine, .NET</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Chess, Gaming, Teaching</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="15">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/Shivam1202/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>
-				With great experiences working as a fill-time developer along with two years of entrepreneurial experience and even more hands on experience while working with several professional outfits, 
-				I bring a rich technical and inter-personal skillset.
-			</p>
+          <div class="hero__figure reveal" data-delay="2">
+            <div class="hero__ring" aria-hidden="true"></div>
+            <img class="hero__portrait" src="images/opt/portrait.webp" width="803" height="1200"
+                 alt="Portrait of Shivam Kr Chaudhary" fetchpriority="high" decoding="async">
           </div>
         </div>
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-				
-				<div class="col-md-12">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Python Developer - RPA</span>
-						<h2>Century Plyboards (I) Ltd.</h2>
-						<span class="position">2024 - Present</span>
-						<p class="mt-4">Century Plyboards is a leading manufacturer of plywood and decorative veneer products in India, known for its high-quality solutions for furniture and interior design.
-										 With a reputation for innovation, Cenury Ply takes a digital initiative to automate SCM processes with python, AI and ML.
-
-							<ul>
-								<li>Contributed significantly to Project SWAYAM: a digital initiative by the company to automate manual SCM processes such as Excel report generation using machine learning.</li>
-								<li>Developed automated systems that streamlined business communication processes across different stakeholders pan-India.</li>
-								<li>Proposed innovative ideas leveraging IoT technology to enhance production efficiency and quality analysis, presenting them for potential implementation.
-									</li>
-								
-							</ul>
-						</p>
-					</div>
-				</div>
-
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Coding Instructor</span>
-						<h2>BrightChamps</h2>
-						<!-- <span class="position">2023 - Present</span> -->
-						<p class="mt-4">BrightChamps is a global live-learning edtech platform for kids from 6 to 16 years to learn next-gen life skills such as Coding, Financial Literacy, Communication Skills and Robotics.
-							<ul>
-								<li>Enriched several young minds with the power of programming.</li>
-								
-							</ul>
-						</p>
-					</div>
-				</div>
-				
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Data Science Intern</span>
-						<h2>Celebal Technologies</h2>
-						<!-- <span class="position">2023 - 2023</span> -->
-						<p class="mt-4">Celebal Technologies is a premier software services company in the field of Data Science and Big Data.
-							<ul>
-								<li>Made a Stock Price Prediction model that can fetch stocks data in realtime.</li>
-								<li>Made an Email Spam Classifier ML app.</li>
-								<li>Deployed projects using Streamlit.</li>	
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Unity/ Unreal Developer</span>
-						<h2>Hyvarcity Pvt.Ltd.</h2>
-						<!-- <span class="position">2022 - Present</span> -->
-						<p class="mt-4">Hyvarcity is my very own venture. It is an emerging firm that is working towards AR/VR Metaverse Solutions.
-							<ul>
-								<li>Made MetaOffice, a metaverse office.</li>
-								<li>Made MetaAuditorium, a virtual movie theater like experience for multiple platforms.</li>
-								<li>Developed a VR Real Estate showcase mobile application.</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Unity/Unreal Developer</span>
-						<h2>Experimental Technologies Pvt. Ltd.</h2>
-						<!-- <span class="position">2022 - 2022</span> -->
-						<p class="mt-4">Experiential Technologies Pvt. Ltd. creates immersive and real life memorable experiences which engage the consumer. 
-							<ul>
-								<li>Built a multiplayer text and voice chat mobile app.</li>
-								<li>Designed a AI pathfinding system.</li>
-								<li>Built a template for a top-down coop game.</li>
-								<li>Participated in Epic Games' GameJam 2022.</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-
-				
-			</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2020-2024</span>
-    					<h2>Bachelor of Engineering</h2>
-    					<span class="position">Dr. B.C. Roy Engineering College</span>
-    					<p class="mt-4">8.71 CGPA</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2019</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">B.S.F. Senior Secondary Residential School</span>
-    					<!-- <p class="mt-4">Grade: First class distinction.</p> -->
-    				</div>
-				</div>
-    		</div>
-
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1cRwKu48YdzCyOonGrdP6ZNuIOXl0JEWV/view?usp=sharing" target="_blank" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
+        <!-- career trajectory -->
+        <div class="trajectory reveal" data-delay="5">
+          <ol class="trajectory__list" id="trajectory-list"></ol>
+        </div>
+      </div>
     </section>
 
-   
+    <!-- ============================= ABOUT ============================= -->
+    <section class="section" id="about">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__num">01</span> About</p>
+          <h2 class="section-title">Engineer, researcher &amp; <em>teacher</em>.</h2>
+        </header>
 
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are some of my projects that demonstrate the diversity of my skillset.</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/ShivamKumar1202/spotify-clone/" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/ShivamKumar1202/spotify-clone/">Spotify Clone</a></h3>
-                <p>A music player inspired from Spotify. Made using NextJS, TailwindCSS, SQL and Supabase.</p>
-              </div>
+        <div class="about__grid">
+          <aside class="about__card reveal">
+            <div class="about__avatar">
+              <img src="images/opt/avatar.webp" width="800" height="800" alt="Shivam Kr Chaudhary" loading="lazy" decoding="async">
             </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/ShivamKumar1202/Blaster/" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
+            <dl class="facts" id="about-facts"></dl>
+            <a class="btn btn--ghost btn--block" href="https://www.linkedin.com/in/Shivam1202/" target="_blank" rel="noopener noreferrer">
+              Connect on LinkedIn <svg class="icon"><use href="#i-arrow"/></svg>
+            </a>
+          </aside>
 
-                <h3 class="heading"><a href="https://github.com/ShivamKumar1202/Blaster/">Blaster</a></h3>
-                <p>A Third-Person Multiplayer shooter game. Made with Unreal Engine 5 and Steam.</p>
-              </div>
+          <div class="about__body">
+            <div class="prose reveal" data-delay="1">
+              <p>
+                Currently pursuing my M.Tech in Computer Science at Netaji Subhas University of
+                Technology, I previously worked as an RPA Developer at Century Plyboards (I) Ltd.,
+                where I built robust and scalable systems that automate business processes and
+                manual report generation. I also developed automated systems that streamlined
+                business communication across stakeholders on a Pan-India scale.
+              </p>
+              <p>
+                Along with an academic career that too has no shortage of stellar achievements,
+                I have always been driven by a desire to explore the more tangible aspects of
+                programming. This desire brought me to the doors of the world of software
+                development.
+              </p>
+              <p>
+                I have accrued a wealth of experience working in several multi-disciplinary teams
+                and have assumed a variety of roles in them. Whether as an intern, a developer,
+                a team lead, or a teacher, I always do my best to enrich the work environment with
+                my technical expertise and enthusiasm.
+              </p>
             </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/ShivamKumar1202/AI-Character/" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/ShivamKumar1202/AI-Character/" target="_blank">AI Character</a></h3>
-                <p>An AI Character that can hold conversations with you just like a real person and in real-time.</p>
-              </div>
+            <div class="skill-bars reveal" data-delay="2">
+              <h3 class="subhead">Proficiency</h3>
+              <div id="skill-bars"></div>
             </div>
-          </div>
-        </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://drive.google.com/file/d/1Hyoc0KfRKi90sfwXcquqLBWKyZQNzFTO/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/proj_4.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://drive.google.com/file/d/1Hyoc0KfRKi90sfwXcquqLBWKyZQNzFTO/view?usp=sharing">MetaOffice</a></h3>
-				  <p>A Metaverse Office where you can access any resource via the internet and hold meetings.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/ShivamKumar1202/precision-agriculture" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/ShivamKumar1202/precision-agriculture" target="_blank">Predictive Precision Agriculture</a></h3>
-				  <p>A system designed to improve efficiency of irrigation activities by reducing water wastage by leveraging IoT and Machine learning models.</p>
-				</div>
-			  </div>
-			</div>
 
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/ShivamKumar1202/GO-CRUD-API/" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_6.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/ShivamKumar1202/GO-CRUD-API/" target="_blank">GO CRUD API</a></h3>
-				  <p>A CRUD API made with GO Lang. It is a simplified version that implements GO structs and JSON rather than databases.</p>
-				</div>
-			  </div>
-			</div>
-
-		 </div>
-	  </div>
-    </section>
-
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="10">0</strong>
-                <span>Achievements</span>
-              </div>
+            <div class="skill-groups reveal" data-delay="3">
+              <h3 class="subhead">Toolkit</h3>
+              <div id="skill-groups" class="stack" style="gap:20px"></div>
             </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="15">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="30">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/shivamkumar1202" target ="_blank" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						<p><a href="https://drive.google.com/drive/folders/1H8Q8aQ_NBY_a62vqhfNzNUWNGGQTiAJQ?usp=sharing" 
-							target ="_blank" class="btn btn-primary py-3 px-5">Project Demo Videos</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
+    </section>
 
+    <!-- ============================= RESUME ============================= -->
+    <section class="section section--tinted" id="resume">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__num">02</span> Resume</p>
+          <h2 class="section-title">Experience &amp; <em>education</em>.</h2>
+          <p class="section-lede">
+            A B.Tech in Computer Science, a year as an RPA Developer shipping automation at
+            pan-India scale, and an M.Tech in progress — alongside teaching and research.
+          </p>
+        </header>
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
+        <div class="resume__layout">
+          <div class="resume__rail reveal">
+            <h3 class="resume__rail-title">Experience</h3>
+            <p class="resume__rail-note">Roles across automation, research, immersive technology and teaching.</p>
+            <a class="btn btn--solid btn--block" data-resume-link href="data/Shivam-Resume.pdf" download>
+              <span data-resume-label>Download CV</span> <svg class="icon"><use href="#i-file"/></svg>
+            </a>
           </div>
+
+          <ol class="timeline" id="timeline"></ol>
         </div>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-				  <p style="color: #ffffff;">Patna, India</p>
-	          </div>
+        <div class="education">
+          <h3 class="subhead reveal">Education</h3>
+          <div class="edu-grid" id="edu-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PROJECTS ============================= -->
+    <section class="section" id="projects">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__num">03</span> Projects</p>
+          <h2 class="section-title">Selected <em>work</em>.</h2>
+          <p class="section-lede">Below are some of my projects that demonstrate the diversity of my skillset.</p>
+        </header>
+
+        <div class="project-filters reveal" id="project-filters" role="group" aria-label="Filter projects by category"></div>
+        <div class="project-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================= PUBLICATIONS ============================= -->
+    <section class="section section--tinted" id="publications">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__num">04</span> Research</p>
+          <h2 class="section-title">Research &amp; <em>publications</em>.</h2>
+          <p class="section-lede">
+            Work in IoT sensing, graph learning and privacy-preserving machine learning — from
+            published conference research to a manuscript under review.
+          </p>
+        </header>
+
+        <div class="pub-grid" id="pub-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================= ACHIEVEMENTS + STATS ============================= -->
+    <section class="section" id="achievements">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__num">05</span> Achievements</p>
+          <h2 class="section-title">Beyond the <em>code</em>.</h2>
+        </header>
+
+        <div class="ach-grid" id="ach-grid"></div>
+      </div>
+
+      <div class="stats" style="margin-top: var(--section-pad-sm)">
+        <div class="shell">
+          <div class="stats__inner" id="stats-inner"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CTA ============================= -->
+    <section class="cta" id="more">
+      <div class="cta__bg" aria-hidden="true"></div>
+      <div class="shell cta__inner reveal">
+        <p class="eyebrow eyebrow--center">More on GitHub</p>
+        <h2 class="cta__title">I&rsquo;m drawn to challenging questions and the <em>discoveries</em> they lead to.</h2>
+        <div class="cta__actions">
+          <a class="btn btn--solid" href="https://github.com/shivamkumar1202" target="_blank" rel="noopener noreferrer">
+            <svg class="icon"><use href="#i-github"/></svg> GitHub
+          </a>
+          <a class="btn btn--ghost" data-demo-link href="#" target="_blank" rel="noopener noreferrer">
+            <svg class="icon"><use href="#i-play"/></svg> Project Demo Videos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACT ============================= -->
+    <section class="section" id="contact">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__num">06</span> Contact</p>
+          <h2 class="section-title">Let&rsquo;s build something <em>useful</em>.</h2>
+          <p class="section-lede">Below are the details to reach out to me!</p>
+        </header>
+
+        <div class="contact-grid" id="contact-grid"></div>
+
+        <div class="question reveal">
+          <div>
+            <h3 class="question__title">Have a <em>question?</em></h3>
+            <p class="question__note">Send it through the form and I&rsquo;ll get back to you.</p>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-					<a href="tel://8436427198"> <span class="icon-phone2"></span> </a>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://8436427198">+ 91 84364 27198</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-					<a href="mailto:sk12022001@gmail.com"><span class="icon-paper-plane"></span> </a>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:sk12022001@gmail.com">sk12022001@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-				  <a href="https://drive.google.com/file/d/1cRwKu48YdzCyOonGrdP6ZNuIOXl0JEWV/view?usp=sharing" target="_blank"> <span class="icon-globe"></span> </a>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1cRwKu48YdzCyOonGrdP6ZNuIOXl0JEWV/view?usp=sharing" target="_blank"> <i><u>resumelink</u></i> </a></p>
-	          </div>
-          </div>
+          <a class="btn btn--solid" data-form-link href="#" target="_blank" rel="noopener noreferrer">
+            <svg class="icon"><use href="#i-mail-open"/></svg> Contact Me
+          </a>
+        </div>
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/KPerMiXvJCk9QgrA7" target="_blank" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@MyYTchannel"><span class="icon-youtube"></span></a></li> -->
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/Shivam1202/" target="_blank"><span class="icon-linkedin"></span></a></li>  
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/myTwitterAC"><span class="icon-twitter"></span></a></li> -->
-					  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100005932754355&sfnsn=wiwspwa&mibextid=RUbZ1f" target="_blank"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/Shivam.1202/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
+        <div class="socials reveal" id="socials">
+          <span class="socials__label">Find me on</span>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <div class="shell footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark" data-brand-mark>SC</span>
+        <div>
+          <p class="footer__name" data-brand-name>Shivam Kr Chaudhary</p>
+          <p class="footer__role" data-brand-role>Software Engineer — Patna, India</p>
+        </div>
+      </div>
 
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
+    </div>
+  </footer>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+  <script src="data/content.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
